@@ -1,0 +1,20 @@
+.logo{
+    color: #ffffff;    
+}
+span{
+    
+    color: #f6b915;
+}
+.navigation{
+    color: #ffffff;
+}
+.nav-anchor{
+    text-decoration: none;
+    /* margin: 5px 10px 5px 10px;
+    padding: 5px 8px 5px 8px; */
+    text-transform: capitalize;
+    font-size: 18px;
+}
+.navbar-toggler-icon{
+    color: lightblue;
+}
