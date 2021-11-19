@@ -6,7 +6,7 @@ const ManageProducts = () => {
         const [orders, setCourse] = useState([]);
         
         useEffect(()=>{
-            fetch('http://localhost:5000/manageProducts')
+            fetch('https://hidden-reaches-55205.herokuapp.com/manageProducts')
             .then(res => res.json())
             .then(data => setCourse(data))
           }, []);

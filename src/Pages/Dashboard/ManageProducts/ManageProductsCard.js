@@ -10,7 +10,7 @@ const ManageProductsCard = (props) => {
     
     const handledelete = (_id) => {
         alert("Are you sure to delete this Product?")
-        fetch(`http://localhost:5000/deleteProduct/${_id}`, {
+        fetch(`https://hidden-reaches-55205.herokuapp.com/deleteProduct/${_id}`, {
             method: "DELETE"
         })
         console.log(_id);

@@ -8,7 +8,7 @@ const MyOrders = () => {
     const [services, setServices] = useState([]);
 
     useEffect(()=> {
-        fetch(`http://localhost:5000/myOrderss/${user.email}`)
+        fetch(`https://hidden-reaches-55205.herokuapp.com/myOrderss/${user.email}`)
         .then(res=> res.json())
         .then(data=> setServices(data))
     })

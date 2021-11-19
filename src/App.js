@@ -14,6 +14,7 @@ import AuthProvider from './Pages/context/AuthProvider';
 import Dashboard from './Pages/Dashboard/Dashboard/Dashboard';
 import DashboardRoute from './Pages/Dashboard/Dashboard/DashboardRoute';
 import Booking from './Pages/BookingPage/Booking';
+import Footer from './Pages/Home/Footer/Footer';
 
 function App() {
   return (
@@ -22,40 +23,40 @@ function App() {
         
         <Router>
           <Navigation></Navigation>
-          <Switch>
-            <Route exact path='/'>
-              <HomePage></HomePage>
-            </Route>
-            <Route path='/homepage'>
-              <HomePage></HomePage>
-            </Route>
-            <Route path='/jump'>
-              <Jump></Jump>
-            </Route>
-            <PrivateRoute path='/purchase/:serviceId'>
-              <Purchase></Purchase>
-            </PrivateRoute>
-            <PrivateRoute path='/booking'>
-              <Booking></Booking>
-            </PrivateRoute>
-              
-            <Route path='/explore'>
-              <Explore></Explore>
-            </Route>
-            <Route path='/login'>
-              <Login></Login>
-            </Route>
-            <Route path='/register'>
-              <Register></Register>
-            </Route>
-            <PrivateRoute path='/dashboard'>
-              <Dashboard></Dashboard>
-            </PrivateRoute>
-            <PrivateRoute path='/dashboardroute'>
-              <DashboardRoute></DashboardRoute>
-            </PrivateRoute>
-            
-          </Switch>
+            <Switch>
+              <Route exact path='/'>
+                <HomePage></HomePage>
+              </Route>
+              <Route path='/homepage'>
+                <HomePage></HomePage>
+              </Route>
+              <Route path='/jump'>
+                <Jump></Jump>
+              </Route>
+              <PrivateRoute path='/purchase/:serviceId'>
+                <Purchase></Purchase>
+              </PrivateRoute>
+              <PrivateRoute path='/booking'>
+                <Booking></Booking>
+              </PrivateRoute>
+                
+              <Route path='/explore'>
+                <Explore></Explore>
+              </Route>
+              <Route path='/login'>
+                <Login></Login>
+              </Route>
+              <Route path='/register'>
+                <Register></Register>
+              </Route>
+              <PrivateRoute path='/dashboard'>
+                <Dashboard></Dashboard>
+              </PrivateRoute>
+              <PrivateRoute path='/dashboardroute'>
+                <DashboardRoute></DashboardRoute>
+              </PrivateRoute>            
+            </Switch>
+            <Footer></Footer>
           </Router>
       </AuthProvider>
     </div>

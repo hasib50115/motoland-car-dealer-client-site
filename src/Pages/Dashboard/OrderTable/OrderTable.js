@@ -10,7 +10,7 @@ const OrderTable = (props) => {
     
     const handledelete = (_id) => {
         alert("Are you sure to delete this?")
-        fetch(`http://localhost:5000/deleteOrder/${_id}`, {
+        fetch(`https://hidden-reaches-55205.herokuapp.com/deleteOrder/${_id}`, {
             method: "DELETE"
         })
         console.log(_id);

@@ -10,7 +10,7 @@ const AddAProduct = () => {
     const { register, handleSubmit, watch, formState: { errors } } = useForm();
     const onSubmit = data => {
         data.email = user.email;
-        fetch('http://localhost:5000/addaproduct',{
+        fetch('https://hidden-reaches-55205.herokuapp.com/addaproduct',{
             method:"POST",
             headers: {"content-type": "application/json"},
             body: JSON.stringify(data)

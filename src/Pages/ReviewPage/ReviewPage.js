@@ -5,7 +5,7 @@ import ReviewPageCard from './ReviewPageCard';
 const ReviewPage = () => {
     const [services, setServices] = useState([]);
     useEffect(()=>{
-        fetch('http://localhost:5000/reviews')
+        fetch('https://hidden-reaches-55205.herokuapp.com/reviews')
         .then(res => res.json())
         .then(data => setServices(data))
       }, []);

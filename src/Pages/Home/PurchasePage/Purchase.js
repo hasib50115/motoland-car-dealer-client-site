@@ -21,19 +21,19 @@ const Purchase = () => {
         data.status = "pending";
         console.log(data);
 
-        fetch('http://localhost:5000/confirmOrder', {
+        fetch('https://hidden-reaches-55205.herokuapp.com/confirmOrder', {
             method: "POST",
             headers: {"content-type": "application/json"},
             body: JSON.stringify(data)
         })
     }
     useEffect(() => {
-        fetch(`http://localhost:5000/services/${serviceId}`)
+        fetch(`https://hidden-reaches-55205.herokuapp.com/services/${serviceId}`)
         .then(res=> res.json()) 
         .then(data=> setService(data))
     }, [])
     useEffect(() => {
-        fetch(`http://localhost:5000/explore/${serviceId}`)
+        fetch(`https://hidden-reaches-55205.herokuapp.com/explore/${serviceId}`)
         .then(res=> res.json()) 
         .then(data=> setService(data))
     }, [])

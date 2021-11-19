@@ -22,13 +22,19 @@ const Navigation = () => {
                             </li>                    
                         </ul>
                         <form class="d-flex navbar-nav me-auto mb-2 mb-lg-0">
-                            <div className="nav-item navigation-links">
-                                <Link className="nav-anchor navigation" to='homepage'>Home</Link>
-                                <Link className="nav-anchor navigation m-3" to='explore'>Explore</Link>
+                            <div className="d-flex nav-item navigation-links">
+                                <div className="navigation-button">
+                                    <Link className="nav-anchor navigation" to='homepage'>Home</Link>
+                                    <Link className="nav-anchor navigation m-3" to='explore'>Explore</Link>
+                                </div>
                             
                                 {
-                                    user.email ? 
-                                    <button className="btn btn-warning" onClick={emailLogOut}>Logout</button> && <Link className="nav-anchor navigation m-3" to='dashboard'>Dashboard</Link>
+                                    user.email ? <div style={{marginTop:'-2px'}} className="navigation-button">
+                                        <Link className="nav-anchor navigation m-3" to='dashboard'>Dashboard</Link>
+                                        <button className="btn btn-warning" onClick={emailLogOut}>Logout</button>
+                                        
+                                    </div>
+                                    
                                     :
                                     <Link className="nav-anchor navigation m-3" to='login'>login</Link>
                                 }

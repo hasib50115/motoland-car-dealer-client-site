@@ -4,7 +4,7 @@ import './MyOrdersCard.css';
 const MyOrdersCard = (props) => {
     const {name, price, description, img, _id} = props.service;
     const handledelete = (_id) => {
-        fetch(`http://localhost:5000/deleteOrder/${_id}`, {
+        fetch(`https://hidden-reaches-55205.herokuapp.com/deleteOrder/${_id}`, {
             method: "DELETE"
         })
         console.log(_id);
