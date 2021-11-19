@@ -1,0 +1,13 @@
+.services-cards{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+@media only screen and (max-width: 600px) {
+    .services-cards{
+        grid-template-columns: auto;
+    }
+
+}

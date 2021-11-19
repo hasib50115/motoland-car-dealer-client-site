@@ -24,7 +24,7 @@ const Carousel = () => {
                       <div style={{textAlign: 'left'}} class="col-lg-7 p-5">
                           <h1>Kia Sportage</h1>
                           <p>Sportage is the new benchmark medium SUV – visionary technology, distinctive design language, avant-garde space, and a powerful driving experience in one.</p>
-                          <h1>$55000</h1>
+                          <h1>$21300</h1>
                           <button class="panda-btn-buy-now btn-warning"><h6>Buy Now</h6></button>
                       </div>
                       <div class="col-lg-5">
@@ -37,7 +37,7 @@ const Carousel = () => {
                       <div style={{textAlign: 'left'}} class="col-lg-7 p-5">
                           <h1>Honda Vezel</h1>
                           <p>The VEZEL HYBRID is the first among all Honda hybrid models to be equipped with Honda's original Real Time AWD, which controls torque distribution to the front and rear wheels precisely through electronic control.</p>
-                          <h1>$48000</h1>
+                          <h1>$29800</h1>
                           <button class="panda-btn-buy-now btn-warning"><h6>Buy Now</h6></button>
                       </div>
                       <div class="col-lg-5">

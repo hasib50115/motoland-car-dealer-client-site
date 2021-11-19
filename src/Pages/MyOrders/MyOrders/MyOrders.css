@@ -1,0 +1,15 @@
+.text{
+    color: black;
+}
+.scard{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+@media only screen and (max-width: 600px) {
+    .scard{
+        grid-template-columns: auto;
+    }
+}

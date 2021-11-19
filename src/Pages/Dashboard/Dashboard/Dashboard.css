@@ -1,0 +1,34 @@
+.dashboard-link-area h6:hover{
+    background-color: #FFC107;
+    color: #333333;
+}
+.dash-nav{
+    height: 100vh;
+
+}
+.dashboard-section{
+    margin-top: 10px;
+}
+.dash-logo{
+    display: none;
+}
+
+
+
+
+@media only screen and (max-width: 600px) {
+    .dash-nav{
+        height: 400px;
+    
+    }    
+    .dash-logo{
+        display: block;
+        color: #ffffff;
+    }
+    .dash-second-logo{
+        display: none;
+    }
+  
+   
+
+}
