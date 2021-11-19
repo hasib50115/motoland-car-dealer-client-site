@@ -36,7 +36,10 @@ const Navigation = () => {
                                     </div>
                                     
                                     :
-                                    <Link className="nav-anchor navigation m-3" to='login'>login</Link>
+                                    <div>
+                                        <Link  className="nav-anchor navigation m-3" to='login'>login</Link>
+                                    </div>
+                                    
                                 }
                             </div>
                         </form>
