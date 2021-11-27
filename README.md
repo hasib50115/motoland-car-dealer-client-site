@@ -1,7 +1,7 @@
 # site name: motoland
 Motoland is a car selling website.
 
-## Live motoland client site: https://fir-test-auth-8ad4f.web.app/
+## Live motoland client site: https://motoland-car-dealer.web.app/
 
 ## Features of the site:
 * On the Motoland website there is a homepage and explore page wher you can see all the products

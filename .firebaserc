@@ -1,5 +1,7 @@
 {
   "projects": {
-    "default": "fir-test-auth-8ad4f"
-  }
+    "default": "fir-test-auth-8ad4f",
+    "development": "motoland-car-dealer"
+  },
+  "targets": {}
 }
